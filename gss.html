@@ -12,7 +12,7 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-	<body class="is-preload">
+	<body class="landing is-preload">
 
 		<!-- Page Wrapper -->
 			<div id="page-wrapper">
@@ -37,12 +37,18 @@
 					</header>
 
 				<!-- Main -->
+				<section id="banner">
+					<div class="inner">
+						<h2>Ground Station Software</h2>
+					</div>
+					<a href="#content" class="more scrolly">Learn More</a>
+				</section>
 					<article id="main">
-						<header>
+						<!-- <header>
 							<h2>Ground Station Software</h2>
-							<!-- <p></p> -->
-						</header>
-						<section class="wrapper style5">
+							<a href="#content" class="more scrolly">Learn More</a>
+						</header> -->
+						<section id="content" class="wrapper style5">
 							<div class="inner">
 
 								<h3>Purpose</h3>
@@ -61,11 +67,12 @@
 
 								
 
-
-								<video autoplay muted loop>
-									<source src="images/gss-irec-2023.mov" type="video/mp4">
-									Your browser does not support the video tag.
-								</video>
+								<center>
+									<video autoplay muted loop>
+										<source src="images/gss-irec-2023.mov" type="video/mp4">
+										Your browser does not support the video tag.
+									</video>
+								</center>
 
 								<hr />
 
@@ -76,9 +83,9 @@
 								</h4>
 								<p>
 									Based on my past experiences and after considering the available options, 
-									it became evident that developing a Node.js-based solution was the most suitable choice.
-									 Node.js, with its extensive library ecosystem, provided the ideal platform to leverage a wide 
-									 range of powerful tools and functionalities.
+									it became evident that developing a Node.js-based solution was the most suitable choice. 
+									Node.js, with its extensive library ecosystem, provided the ideal platform to leverage a wide 
+									range of powerful tools and functionalities.
 									 
 								</p>
 								<p>
@@ -90,18 +97,38 @@
 									including mobile devices and tablets.
 								</p>
 								<p>	
-									For the user interface, I used HTML, CSS, and Bootstrap. 
+									In an era of numerous advanced frameworks for user interface and design, I made a deliberate choice to adopt a 
+									more traditional approach using HTML and CSS. By utilizing these foundational technologies, I ensured a solid 
+									and reliable foundation for the interface. To strike a balance between customization and efficiency, I 
+									incorporated Bootstrap and custom SASS. This combination allowed us to achieve maximum flexibility and tailor 
+									the interface to our specific needs, while also leveraging existing solutions and avoiding unnecessary reinvention 
+									of the wheel. The result was a visually appealing and highly intuitive interface that effectively met our requirements.
 								</p>
 								<p>	
-									For the map, I used Leaflet.js, an open-source JavaScript library for user-friendly interactive maps.
+									In the COTS solution, while location data acquisition was present, it had its limitations. 
+									To enhance the map functionality, I integrated Leaflet.js, an open-source JavaScript library 
+									known for its user-friendly and interactive mapping capabilities. Leveraging the power of Leaflet.js, 
+									I was able to create a dynamic and visually appealing map interface that allowed users to explore and 
+									interact with location data seamlessly. This addition greatly enhanced the overall recovery process of our rocket and 
+									provided a more comprehensive visualization of the transmitted location data.
 								</p>
-
+								<center>
+									<video style="width:75vmin;" autoplay muted loop>
+										<source src="images/gps-demo.mov" type="video/mp4">
+										Your browser does not support the video tag.
+									</video>
+								</center>
+								
+								<hr />
 								<h4>
 									Rocket Avionics Software
 								</h4>
 								<p>
 									Ground Station Software is primarily a web application, but to make it work, 
-									we also needed to make some additions to the telemetry side of the rocket.
+									we also needed to make some additions to the telemetry side of the rocket. This included 
+									making our own packet structure to hold the vital information about our rocket such as sensor data, 
+									battery voltage, and FSM state. We also added the ability to receive commands from the ground station,
+									such as changing the radio frequency or the call sign of the operator.
 								</p>
 								<!-- <ul>
 									<li>Electron.js</li>
@@ -144,12 +171,38 @@
 </html>
 
 <style>
-	#main > header {
-		padding: 20em 0 20em 0 ;
+	body.is-mobile.landing #banner,
+	body.is-mobile.landing .wrapper.style4 {
 		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/gss-banner.jpg");
 		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/gss-banner.jpg");
 		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/gss-banner.jpg");
 		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/gss-banner.jpg");
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	body.landing #page-wrapper {
+		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/gss-banner.jpg");
+		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/gss-banner.jpg");
+		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/gss-banner.jpg");
+		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/gss-banner.jpg");
+		background-attachment: fixed;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		padding-top: 0;
+	}
+	#main > header {
+		padding: 12em 0 10em 0 ;
+		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/gss-banner.jpg");
+		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/gss-banner.jpg");
+		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/gss-banner.jpg");
+		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/gss-banner.jpg");
+		background-attachment: fixed;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		text-align: center;
 	}
 	video {
 		/* position: absolute; */
