@@ -1,0 +1,163 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Ground Station Software</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Aryaman Dwivedi</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">Home</a></li>
+											<li><a href="">Education</a></li>
+											<li><a href="#one-point-five">Projects</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<article id="main">
+						<header>
+							<h2>Ground Station Software</h2>
+							<!-- <p></p> -->
+						</header>
+						<section class="wrapper style5">
+							<div class="inner">
+
+								<h3>Purpose</h3>
+								<p>
+									When I initially joined the telemetry team, I discovered that we were relying on a Commercial Off-The-Shelf (COTS) 
+									solution for real-time flight data monitoring. Recognizing the potential for greater value, 
+									I advocated for the development of a custom software solution. By leveraging my expertise in web development, 
+									we were able to build a custom software application that not only enabled real-time data monitoring 
+									but also allowed us to leverage information from additional sensors in our avionics stack. This customization provided us 
+									with a unique advantage, offering a tailored and comprehensive view of the data, leading to enhanced 
+									insights.
+								</p>
+								<p>
+									Hence, Ground Station Software was born.
+								</p>
+
+								
+
+
+								<video autoplay muted loop>
+									<source src="images/gss-irec-2023.mov" type="video/mp4">
+									Your browser does not support the video tag.
+								</video>
+
+								<hr />
+
+								<h3>Technology</h3>
+								
+								<h4>
+									Front-end Development
+								</h4>
+								<p>
+									Based on my past experiences and after considering the available options, 
+									it became evident that developing a Node.js-based solution was the most suitable choice.
+									 Node.js, with its extensive library ecosystem, provided the ideal platform to leverage a wide 
+									 range of powerful tools and functionalities.
+									 
+								</p>
+								<p>
+									For the front-end, I used Electron.js, a framework for building cross-platform desktop applications with web technologies. 
+									Using Electron allowed me to leverage my existing knowledge of web development, which made the development process much more efficient. 
+									Electron also allowed me to use TypeScript, a superset of JavaScript that adds static typing to the language.
+									The main advantage for using this framework, was its ability to run on multiple platforms, including Windows, macOS, and Linux.
+									In addition, we laid the foundation for allowing GSS to run on a web server, which would allow us to access the software from anywhere, 
+									including mobile devices and tablets.
+								</p>
+								<p>	
+									For the user interface, I used HTML, CSS, and Bootstrap. 
+								</p>
+								<p>	
+									For the map, I used Leaflet.js, an open-source JavaScript library for user-friendly interactive maps.
+								</p>
+
+								<h4>
+									Rocket Avionics Software
+								</h4>
+								<p>
+									Ground Station Software is primarily a web application, but to make it work, 
+									we also needed to make some additions to the telemetry side of the rocket.
+								</p>
+								<!-- <ul>
+									<li>Electron.js</li>
+									<li>TypeScript</li>
+									<li>SerialPort</li>
+									<li>Leaflet.js</li>
+									<li>HTML & CSS</li>
+									<li>Bootstrap</li>
+								</ul> -->
+							</div>
+						</section>
+					</article>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+						<ul class="copyright">
+							<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
+
+<style>
+	#main > header {
+		padding: 20em 0 20em 0 ;
+		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/gss-banner.jpg");
+		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/gss-banner.jpg");
+		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/gss-banner.jpg");
+		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/gss-banner.jpg");
+	}
+	video {
+		/* position: absolute; */
+		/* z-index: -1; */
+		top: 0;
+		left: 0;
+		width: 100%; 
+		height: 100%;
+		object-fit: cover;
+	}
+</style>
