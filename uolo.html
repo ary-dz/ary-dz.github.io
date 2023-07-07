@@ -1,0 +1,168 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Timetable Scheduler</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="landing is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+				<header id="header">
+					<h1><a href="index.html">Aryaman Dwivedi</a></h1>
+					<nav id="nav">
+						<ul>
+							<li class="special">
+								<a href="#menu" class="menuToggle"><span>Menu</span></a>
+								<div id="menu">
+									<ul>
+										<li><a href="index.html">Home</a></li>
+										<li><a href="about.html">About Me</a></li>
+										<li><a href="">Education</a></li>
+										<li><a href="index.html#one-point-five">Projects</a></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</nav>
+				</header>
+
+				<!-- Main -->
+				<section id="banner">
+					<div class="inner">
+						<h2>Timetable Scheduler</h2>
+					</div>
+					<a href="#content" class="more scrolly">Learn More</a>
+				</section>
+					<article id="main">
+						<section class="wrapper style5">
+							<div class="inner">
+								<h3>About The Company</h4>
+								<p>UOLO is an Indian company that focuses on providing technology-driven solutions for educational institutions. 
+									They specialize in developing software and platforms that aim to enhance communication, collaboration, 
+									and engagement between schools, parents, and students. UOLO offers a range of products and services, 
+									including a school communication app, digital attendance systems, parent-teacher collaboration tools, 
+									exam management platforms, and learning management systems. These solutions are designed to streamline 
+									administrative tasks, facilitate effective communication, and support the overall learning experience in 
+									schools.
+								</p>
+								<h3>My Role</h3>
+								<p>
+									During my internship at UOLO, I undertook the exciting task of developing a comprehensive timetable scheduling system 
+									for schools. The objective was to create a user-friendly platform that enables schools to efficiently manage their 
+									timetables while empowering teachers to personalize their own schedules. As part of the project, I had the creative 
+									freedom to design the system according to my vision and add features beyond the initial requirements. One crucial 
+									aspect was accommodating break times for teachers, as UOLO's main clients were Nursery to 5th-grade schools, which 
+									often incorporate frequent breaks throughout the day. The resulting system allowed for the creation of multiple 
+									timetables for different classes, as well as flexibility in generating multiple timetables for the same class.
+								</p>
+								<p>
+									Timetable scheduling is a complex problem that requires a lot of computational power. Many institutions use graph 
+									coloring to achieve a conflict free schedule, but usually you get one schedule. However, I wanted to give the user (intended to 
+									be the school principal or administrator)
+									the choice to select from multiple schedules. To achieve this, I used a genetic algorithm to generate multiple conflict-free
+									solutions. The algorithm was able to generate multiple schedules in a matter of seconds. The user could then select the 
+									best choice for their school.
+								</p>
+								<p>
+									To achieve a responsive and interactive user interface, I employed Vue.js, a progressive JavaScript framework, for the front-end 
+									development. Vue.js allowed me to seamlessly create a dynamic user experience that adapts to different screen sizes. 
+									To handle data exchange between the front-end and back-end, I utilized Axios, a versatile JavaScript library for making 
+									HTTP requests.
+								</p>
+								<p>
+									For the back-end, I opted for Flask, a Python-based server framework renowned for its simplicity and flexibility, 
+									to build a robust RESTful API. Flask empowered me to handle the logic and data management effectively, ensuring 
+									seamless communication between the front-end and the database. By leveraging the strengths of these frameworks 
+									and technologies, I successfully created a user-friendly and efficient timetable scheduling system for schools, 
+									meeting the specific needs and requirements of UOLO and its clientele.
+								</p>
+								<p>
+									I made a strategic decision to utilize Python as the primary language for the project. Python's exceptional data 
+									parsing capabilities made it an ideal choice, allowing me to efficiently process and manipulate the complex data 
+									involved in creating and managing timetables.
+								</p>
+								<p>
+									To future-proof the system and provide flexibility, I incorporated a feature that enabled users to upload their 
+									configurations as files. This design choice allowed schools to customize their scheduling preferences and easily 
+									adapt the system to their unique requirements. By allowing users to run the timetable generator using their uploaded 
+									configurations, the system provided a seamless and user-friendly experience.
+								</p>
+								<p>
+									All of this secured a high level of adaptability and robustness, meeting the dynamic needs of schools and ensuring 
+									long-term usability.
+								</p>
+							</div>
+						</section>
+					</article>
+
+				<!-- Footer -->
+				<footer id="footer">
+					<ul class="icons">
+						<li><a href="https://www.github.com/ary-dz" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						<li><a href="https://www.linkedin.com/in/ary-dz" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<!-- <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li> -->
+						<li><a href="mailto:dwivedi6@illinois.edu" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+				</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
+
+<style>
+	body.is-mobile.landing #banner,
+	body.is-mobile.landing .wrapper.style4 {
+		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/banner2.png");
+		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/banner2.png");
+		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/banner2.png");
+		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/banner2.png");
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	body.landing #page-wrapper {
+		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/banner2.png");
+		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/banner2.png");
+		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/banner2.png");
+		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/banner2.png");
+		background-attachment: fixed;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		padding-top: 0;
+	}
+	#main > header {
+		padding: 12em 0 10em 0 ;
+		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/banner2.png");
+		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/banner2.png");
+		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/banner2.png");
+		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/banner2.png");
+		background-attachment: fixed;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		text-align: center;
+	}
+</style>
